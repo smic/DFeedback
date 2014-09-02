@@ -11,3 +11,4 @@
 #import <DFeedback/DFApplication.h>
 #import <DFeedback/DFCrashReportWindowController.h>
 #import <DFeedback/DFFeedbackWindowController.h>
+#import <DFeedback/DFSystemProfileDataType.h>

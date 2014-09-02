@@ -50,14 +50,13 @@
 		D4A3249819B6384900D95553 /* DFRelaunch.sh in Resources */ = {isa = PBXBuildFile; fileRef = D4A3246419B6384900D95553 /* DFRelaunch.sh */; };
 		D4A3249919B6384900D95553 /* DFStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3246519B6384900D95553 /* DFStyleSheet.h */; };
 		D4A3249A19B6384900D95553 /* DFStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A3246619B6384900D95553 /* DFStyleSheet.m */; };
-		D4A3249B19B6384900D95553 /* DFSystemProfileDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3246719B6384900D95553 /* DFSystemProfileDataType.h */; };
+		D4A3249B19B6384900D95553 /* DFSystemProfileDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3246719B6384900D95553 /* DFSystemProfileDataType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4A3249C19B6384900D95553 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3246919B6384900D95553 /* GTMDefines.h */; };
 		D4A3249D19B6384900D95553 /* GTMGarbageCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3246A19B6384900D95553 /* GTMGarbageCollection.h */; };
 		D4A3249E19B6384900D95553 /* GTMObjC2Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3246B19B6384900D95553 /* GTMObjC2Runtime.h */; };
 		D4A3249F19B6384900D95553 /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A3246C19B6384900D95553 /* GTMObjC2Runtime.m */; };
 		D4A324A019B6384900D95553 /* GTMStackTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3246D19B6384900D95553 /* GTMStackTrace.h */; };
 		D4A324A119B6384900D95553 /* GTMStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A3246E19B6384900D95553 /* GTMStackTrace.m */; };
-		D4A324A219B6384900D95553 /* MIT License.txt in Resources */ = {isa = PBXBuildFile; fileRef = D4A3246F19B6384900D95553 /* MIT License.txt */; };
 		D4A324A319B6384900D95553 /* ReadMe.markdown in Sources */ = {isa = PBXBuildFile; fileRef = D4A3247019B6384900D95553 /* ReadMe.markdown */; };
 		D4A324A619B6394300D95553 /* DFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A324A419B6394300D95553 /* DFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4A324AD19B63AC900D95553 /* DFeedback-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4A324A919B63AC900D95553 /* DFeedback-Info.plist */; };
@@ -359,6 +358,7 @@
 		D409378E19B63738000250AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DF;
 				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = D409379119B63738000250AA /* Build configuration list for PBXProject "DFeedback" */;
@@ -392,7 +392,6 @@
 				D4A3248719B6384900D95553 /* DFLocalizable.strings in Resources */,
 				D4A3248619B6384900D95553 /* DFFeedbackWindow.xib in Resources */,
 				D4A3248519B6384900D95553 /* DFCrashReportWindow.xib in Resources */,
-				D4A324A219B6384900D95553 /* MIT License.txt in Resources */,
 				D4A3249819B6384900D95553 /* DFRelaunch.sh in Resources */,
 				D4A324AF19B63AC900D95553 /* InfoPlist.strings in Resources */,
 				D4A3248819B6384900D95553 /* DFWarning.pdf in Resources */,

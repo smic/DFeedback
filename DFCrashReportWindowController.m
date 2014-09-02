@@ -4,10 +4,12 @@
 //-------------------------------------------------------------------------------------------------
 
 #import "DFCrashReportWindowController.h"
+#import "DFSystemProfileFetcherDelegate.h"
 #import "DFSystemProfileFetcher.h"
 #import "DFFeedbackSenderDelegate.h"
 #import "DFFeedbackSender.h"
 #import "DFPlaceholderTextView.h"
+#import "DFLinkLabelDelegate.h"
 #import "DFLinkLabel.h"
 #import "DFStyleSheet.h"
 #import "DFApplication.h"
@@ -24,7 +26,7 @@ static NSString* _updateUrl = nil;
 static DFSystemProfileDataType _systemProfileDataTypes = DFSystemProfileData_All;
 
 //-------------------------------------------------------------------------------------------------
-@interface DFCrashReportWindowController()
+@interface DFCrashReportWindowController()<DFLinkLabelDelegate, NSAnimationDelegate, DFFeedbackSenderDelegate, DFSystemProfileFetcherDelegate>
 // icon
 @property (nonatomic, assign) IBOutlet NSImageView* iconImageView;
 

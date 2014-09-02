@@ -5,7 +5,9 @@
 
 #import <AddressBook/AddressBook.h>
 #import "DFFeedbackWindowController.h"
+#import "DFSystemProfileFetcherDelegate.h"
 #import "DFSystemProfileFetcher.h"
+#import "DFFeedbackSenderDelegate.h"
 #import "DFFeedbackSender.h"
 #import "DFPlaceholderTextView.h"
 #import "DFStyleSheet.h"
@@ -84,7 +86,7 @@ static BOOL IsValidEmailAddress(NSString* emailAddress)
 //-------------------------------------------------------------------------------------------------
 #pragma mark - Private interface
 //-------------------------------------------------------------------------------------------------
-@interface DFFeedbackWindowController()
+@interface DFFeedbackWindowController()<DFFeedbackSenderDelegate, DFSystemProfileFetcherDelegate>
 
 // tab control
 @property (nonatomic, assign) IBOutlet NSSegmentedControl* tabsSegmentedControl;

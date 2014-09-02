@@ -5,12 +5,10 @@
 
 #import <Cocoa/Cocoa.h>
 #import "DFSystemProfileDataType.h"
-#import "DFFeedbackSenderDelegate.h"
-#import "DFSystemProfileFetcherDelegate.h"
 
 //-------------------------------------------------------------------------------------------------
 // Feedback window controller
-@interface DFFeedbackWindowController : NSWindowController <DFFeedbackSenderDelegate, DFSystemProfileFetcherDelegate>
+@interface DFFeedbackWindowController : NSWindowController 
 
 // Initialization, call before first use
 + (void)initializeWithFeedbackUrl:(NSString*)feedbackUrl
