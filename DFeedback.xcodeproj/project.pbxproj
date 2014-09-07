@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D409379B19B63738000250AA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D409379A19B63738000250AA /* Cocoa.framework */; };
+		D496D55919BC4586004AECD2 /* EmailValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = D496D55719BC4586004AECD2 /* EmailValidation.h */; };
+		D496D55A19BC4586004AECD2 /* EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = D496D55819BC4586004AECD2 /* EmailValidation.m */; };
 		D4A3247119B6384900D95553 /* DFCrashReportWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A3242819B6384900D95553 /* DFCrashReportWindowController.m */; };
 		D4A3247219B6384900D95553 /* DFFeedbackWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A3242919B6384900D95553 /* DFFeedbackWindowController.m */; };
 		D4A3247319B6384900D95553 /* ApplicationSandboxInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A3242B19B6384900D95553 /* ApplicationSandboxInfo.h */; };
@@ -70,6 +72,11 @@
 		D409379E19B63738000250AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D409379F19B63738000250AA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D40937AF19B63738000250AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D496D55719BC4586004AECD2 /* EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailValidation.h; sourceTree = "<group>"; };
+		D496D55819BC4586004AECD2 /* EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailValidation.m; sourceTree = "<group>"; };
+		D496D56519BC45D9004AECD2 /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/DFCrashReportWindow.xib; sourceTree = "<group>"; };
+		D496D56619BC45D9004AECD2 /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/DFFeedbackWindow.xib; sourceTree = "<group>"; };
+		D496D56719BC45D9004AECD2 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/DFLocalizable.strings; sourceTree = "<group>"; };
 		D4A3242819B6384900D95553 /* DFCrashReportWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCrashReportWindowController.m; sourceTree = "<group>"; };
 		D4A3242919B6384900D95553 /* DFFeedbackWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFFeedbackWindowController.m; sourceTree = "<group>"; };
 		D4A3242B19B6384900D95553 /* ApplicationSandboxInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationSandboxInfo.h; sourceTree = "<group>"; };
@@ -237,6 +244,8 @@
 				D4A3243A19B6384900D95553 /* SoftwareVersion.m */,
 				D4A3243B19B6384900D95553 /* StringAnonymizer.h */,
 				D4A3243C19B6384900D95553 /* StringAnonymizer.m */,
+				D496D55719BC4586004AECD2 /* EmailValidation.h */,
+				D496D55819BC4586004AECD2 /* EmailValidation.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -318,6 +327,7 @@
 				D4A3249919B6384900D95553 /* DFStyleSheet.h in Headers */,
 				D4A3249B19B6384900D95553 /* DFSystemProfileDataType.h in Headers */,
 				D4A3248F19B6384900D95553 /* DFLinkLabel.h in Headers */,
+				D496D55919BC4586004AECD2 /* EmailValidation.h in Headers */,
 				D4A324A619B6394300D95553 /* DFeedback.h in Headers */,
 				D4A3249219B6384900D95553 /* DFPlaceholderTextView.h in Headers */,
 				D4A3247719B6384900D95553 /* DFFeedbackSenderDelegate.h in Headers */,
@@ -371,6 +381,7 @@
 				it,
 				ru,
 				sv,
+				pl,
 			);
 			mainGroup = D409378D19B63738000250AA;
 			productRefGroup = D409379819B63738000250AA /* Products */;
@@ -423,6 +434,7 @@
 				D4A3247119B6384900D95553 /* DFCrashReportWindowController.m in Sources */,
 				D4A3248219B6384900D95553 /* SoftwareVersion.m in Sources */,
 				D4A3249319B6384900D95553 /* DFPlaceholderTextView.m in Sources */,
+				D496D55A19BC4586004AECD2 /* EmailValidation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +450,7 @@
 				D4A3244B19B6384900D95553 /* it */,
 				D4A3244E19B6384900D95553 /* ru */,
 				D4A3245119B6384900D95553 /* sv */,
+				D496D56519BC45D9004AECD2 /* pl */,
 			);
 			name = DFCrashReportWindow.xib;
 			sourceTree = "<group>";
@@ -451,6 +464,7 @@
 				D4A3244C19B6384900D95553 /* it */,
 				D4A3244F19B6384900D95553 /* ru */,
 				D4A3245219B6384900D95553 /* sv */,
+				D496D56619BC45D9004AECD2 /* pl */,
 			);
 			name = DFFeedbackWindow.xib;
 			sourceTree = "<group>";
@@ -464,6 +478,7 @@
 				D4A3244D19B6384900D95553 /* it */,
 				D4A3245019B6384900D95553 /* ru */,
 				D4A3245319B6384900D95553 /* sv */,
+				D496D56719BC45D9004AECD2 /* pl */,
 			);
 			name = DFLocalizable.strings;
 			sourceTree = "<group>";

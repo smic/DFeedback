@@ -3,19 +3,13 @@
 // Some rights reserved: <http://opensource.org/licenses/mit-license.php>
 //-------------------------------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //-------------------------------------------------------------------------------------------------
-// Application
-@interface DFApplication : NSApplication
+// Helpers for e-mail validation
 
-// Relaunches the app
-- (void)relaunch;
+// Empty message test
+extern BOOL IsEmptyMessage(NSString* string);
 
-// Flag indicating that an unhandled exception has occured and the app is in process of terminating
-@property (nonatomic, readonly) BOOL isPostmortem;
-
-// You can ignore certain exceptions whose stack traces contain the following strings
-+ (void)ignoreExceptionsWhoseStackTraceContains:(NSArray*)strings;
-
-@end
+// Address validation
+extern BOOL IsValidEmailAddress(NSString* emailAddress);
